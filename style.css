@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -5,9 +6,11 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body {
   position: relative;
+  font-family: "Roboto", sans-serif;
 }
 .container {
   width: 80%;
@@ -37,4 +40,230 @@ nav a {
 
 a:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+header {
+  height: 90vh;
+  width: 100%;
+  background-image: url("img/bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+header h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+header p {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+header h1,
+header p {
+  text-shadow: 0 0 10px black;
+}
+section div {
+  border-radius: 5px;
+}
+.div-container {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  color: #969696;
+}
+.col-3 {
+  background: #f2f2f2;
+  width: 30%;
+}
+.col-3 img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.col-3 h3,
+.col-3 p,
+.col-2 h3,
+.col-2 p {
+  margin: 20px;
+}
+.col-3 h3 {
+  font-size: 1.5em;
+}
+.col-3 p {
+  color: #383e4c;
+  line-height: 1.2;
+}
+button {
+  padding: 0.5em 1em;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.2em;
+  display: block;
+  margin: 1em auto;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: #449d44;
+}
+.btn-blue {
+  background: #31b0d5;
+}
+.btn-red {
+  background: #852406;
+}
+
+.green {
+  color: #449d44;
+}
+.blue {
+  color: #31b0d5;
+}
+.grey {
+  color: #969696;
+}
+
+.col-2 {
+  background: #f2f2f2;
+  width: 48%;
+}
+.col-2 img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.services {
+  background-image: url("img/bg-2.jpg");
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  padding: 5em 0;
+  font-weight: 300;
+  margin-bottom: 4em;
+}
+.services h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.services p {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.four-cols div {
+  background: #f2f2f2;
+  color: #969696;
+  width: 22%;
+}
+button.btn-white {
+  background-color: white;
+  color: #383e4c;
+}
+.col-4 h3,
+.col-4 p {
+  margin: 1em;
+}
+.col-4 h3 {
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+.one-col {
+  flex-direction: column;
+  background: #f2f2f2;
+}
+.one-col button {
+  width: fit-content;
+  margin: 1em 1em;
+}
+.one-col h3,
+.one-col p {
+  margin-left: 1em;
+}
+.one-col h3 {
+  color: #383e4c;
+  margin-top: 3em;
+}
+.contact {
+  background-image: url("img/bg-3.jpg");
+  background-attachment: fixed;
+  padding: 5em;
+  text-align: center;
+}
+.contact h2 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+.layout {
+  display: grid;
+  column-gap: 50px;
+  row-gap: 20px;
+  width: 70%;
+  margin: 0 auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto;
+}
+.layout p,
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.5);
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  color: #383e4c;
+}
+.layout input:focus,
+textarea:focus {
+  outline: 0;
+}
+.desc {
+  grid-column: 1 / end;
+  padding: 1em;
+}
+.name {
+  grid-column: 1 / 2;
+}
+.email {
+  grid-column: 1 / 2;
+}
+.subject {
+  grid-column: 1 / 2;
+}
+textarea {
+  grid-column: 2 / end;
+  grid-row: 2 / 5;
+}
+.send {
+  grid-row: 5 / 6;
+  grid-column: 2/3;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+}
+.send:hover {
+  background: white;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  color: #969696;
+  padding: 1em 3em;
 }
