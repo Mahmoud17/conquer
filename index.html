@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>conquer</title>
 </head>
 <body>
     <nav>
-        <div class="container">
-            <a href="#">Homepage</a>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+        <i class="fa fa-bars" id="menu"></i>
+        <div class="container" id="nav">
+            <a href="#homepage">Homepage</a>
+            <a href="#about">About Us</a>
+            <a href="#serv">Services</a>
+            <a href="#contact">Contact</a>
             <a href="#">External</a>
         </div>
     </nav>
 
-    <header>
+    <header id="homepage">
         <h1>conquer</h1>
         <h3>Simple Bootstrap Template</h3>
     </header>
 
-    <section class="three-cols div-container">
+    <section class="three-cols div-container" id="about">
         <div class="col-3">
             <img src="img/1-1.jpg" />
             <h3 class="green">Bootstrap v3.3.6</h3>
@@ -43,7 +45,7 @@
         </div>
     </section>
 
-    <section class="two-cols div-container">
+    <section class="two-cols div-container" id="serv">
         <div class="col-2">
             <img src="img/2-1.jpg" />
             <h3>Two Column Left Side</h3>
@@ -102,7 +104,7 @@
         <button class="btn-white">Read More</button>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>Contact Form</h2>
         <div class="layout">
             <p class="desc">Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id
